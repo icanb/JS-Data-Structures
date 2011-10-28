@@ -1,0 +1,48 @@
+<html>
+<head>
+	<title>Queue Implementation</title>
+	<script type="text/javascript" src="queue.js"></script>
+	<script type="text/javascript" src="stack.js"></script>
+</head>
+<body>
+
+	<div id='queue'></div>
+	<script>
+	
+		var queue = new Queue();
+		
+		queue.enqueue('firstElement');		
+		queue.enqueue('secondElement');
+		queue.enqueue('thirdElement');
+		
+		queue.print();
+
+
+		var item = queue.dequeue();		
+		var item = queue.dequeue();
+		queue.print();
+			
+	</script>
+	<br />
+	<div id='stack'></div>
+	<script>
+	
+		var stack = new Stack();
+		
+		stack.push('firstElement');		
+		stack.push('secondElement');
+		stack.push('thirdElement');
+		stack.print();
+		
+		
+		var item = stack.pop();			
+		stack.print();
+
+		var item = stack.pop();	
+		stack.print();
+			
+	</script>
+	
+	
+</body>
+</html>
